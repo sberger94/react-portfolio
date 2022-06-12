@@ -13,6 +13,7 @@ const About = () => {
   // }, []);
 
   return (
+    <>
     <div className='container about-page'>
       <div className='text-zone'>
         <h1>
@@ -28,8 +29,9 @@ const About = () => {
           skills in problem solving, teamwork, and communication.
         </p>
       </div>
-      <Loader type="TailSpin" color="#fff" height={100} width={100} />
     </div>
+    <Loader type='ball-rotate' />
+    </>
   )
 }
 
