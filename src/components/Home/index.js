@@ -8,11 +8,11 @@ const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
   const nameArray = ['S', 'c', 'o', 't', 't'];
 
-  // useEffect(() => {
-  //   return setTimeout(() => {
-  //     setLetterClass('text-animate-hover')
-  //   }, 4000)
-  // }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      return setLetterClass('text-animate-hover')
+    }, 4000)
+  }, []);
 
   return (
     <>
