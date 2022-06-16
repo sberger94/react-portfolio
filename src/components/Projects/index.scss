@@ -1,0 +1,48 @@
+.projects-wrapper {
+    position: relative;
+    float: right;
+    background: rgba(8, 253, 216, 0.1);
+    width: 50%;
+    margin-right: 10%;
+    margin-top: 15vh;
+    min-height: fit-content;
+    padding-right: 25px;
+    padding-bottom: 30px;
+
+    ul {
+        list-style: none;
+        font-family: sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+
+        li {
+            margin-top: 5vh;
+
+            a {
+                color: #ffd700;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: #fff;
+            }
+
+            p {
+                font-size: 14px;
+                margin-left: 15px;
+            }
+
+            .tech-stack {
+                color: #fff;
+                font-family: sans-serif;
+                font-size: 13px;
+                opacity: 0.6;
+                float: right;
+            }
+        }
+
+        li:first-child {
+            margin-top: 0;
+        }
+    }
+}

@@ -1,13 +1,19 @@
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss'
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
   const refForm = useRef();
+
+  useEffect(() => {
+    setTimeout(() => {
+      return setLetterClass('text-animate-hover')
+    }, 3000)
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -71,9 +77,9 @@ const Contact = () => {
           <span>sberger94@gmail.com</span>
         </div>
         <div className='map-wrap'>
-          <MapContainer center={[0,0]} zoom={13}>
-            <TileLayer url='htpps://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' />
-            <Marker position={[0,0]}>
+          <MapContainer center={[45.5627,-122.6787]} zoom={12}>
+            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+            <Marker position={[45.5627,-122.6787]}>
               
             </Marker>
           </MapContainer>
