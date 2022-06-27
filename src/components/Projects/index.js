@@ -25,7 +25,6 @@ const Projects = () => {
         </h1>
       </div>
       <div className='projects-wrapper'>
-        Projects go here
         <ul>
           <li>
             <a target='_blank' rel='noreferrer' href='https://sberger94.github.io/SEI-Connect-4/'>Connect 4</a>
