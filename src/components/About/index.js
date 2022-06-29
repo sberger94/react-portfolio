@@ -30,7 +30,7 @@ const About = () => {
         </p>
       </div>
     </div>
-    <Loader type='ball-rotate' />
+    <Loader type='cube-transition' />
     </>
   )
 }

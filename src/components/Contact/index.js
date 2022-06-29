@@ -85,7 +85,7 @@ const Contact = () => {
           </MapContainer>
         </div>
       </div>
-      <Loader type='ball-rotate' />
+      <Loader type='cube-transition' />
     </>
   )
 }
