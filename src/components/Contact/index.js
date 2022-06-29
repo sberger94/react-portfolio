@@ -85,7 +85,7 @@ const Contact = () => {
           </MapContainer>
         </div>
       </div>
-      <Loader type='cube-transition' />
+      <Loader type='ball-triangle-path' />
     </>
   )
 }
