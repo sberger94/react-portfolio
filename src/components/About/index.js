@@ -30,7 +30,7 @@ const About = () => {
         </p>
       </div>
     </div>
-    <Loader type='ball-triangle-path' />
+    <Loader type="ball-scale-ripple" />
     </>
   )
 }
